@@ -13,4 +13,5 @@ public:
 private:
 	static constexpr Color c = Colors::Red;
 	Location loc;
+	bool result = false;
 };
