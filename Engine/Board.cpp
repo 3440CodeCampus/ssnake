@@ -11,7 +11,7 @@ void Board::DrawCell(const Location& loc, Color c)
 	assert(loc.x < width);
 	assert(loc.y >= 0);
 	assert(loc.y < height);
-	gfx.DrawRectDim(loc.x*dimension, loc.y*dimension, dimension, dimension, c);
+	gfx.DrawRectDim((loc.x*dimension), (loc.y*dimension), dimension, dimension, c);
 }
 int Board::getGridWidth() const
 {
@@ -25,9 +25,9 @@ int Board::getGridHeight() const
 
 bool Board::IsInsideBoard(const Location& loc) const
 {
-	return loc.x *20 >= 20 && loc.x*20 < gfx.ScreenWidth - 25 &&
+	 bool result = loc.x *20 >= 20 && loc.x*20 < gfx.ScreenWidth - 25 &&
 		loc.y *20 >= 20 && loc.y*20 < gfx.ScreenHeight - 25;
-
+	 return result;
 	// return loc.x >= 0 && loc.x < width &&
 	//	loc.y >= 0 && loc.y < height;
 }
