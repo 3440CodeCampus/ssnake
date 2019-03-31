@@ -31,7 +31,7 @@ bool Board::IsInsideBoard(const Location& loc) const
 	// return loc.x >= 0 && loc.x < width &&
 	//	loc.y >= 0 && loc.y < height;
 }
-/*
+
 void Board::DrawWall() const
 {
 	int scrWidth = gfx.ScreenWidth;
@@ -57,4 +57,3 @@ void Board::DrawWall() const
 	
 
 }
-*/

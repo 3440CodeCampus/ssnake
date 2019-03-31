@@ -11,7 +11,7 @@ public:
 	int getGridWidth() const;
 	int getGridHeight() const;
 	bool IsInsideBoard(const Location& loc)const;
-	//void DrawWall()const;
+	void DrawWall()const;
 
 private:
 	static constexpr int dimension = 20;

@@ -74,7 +74,7 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {
-	//brd.DrawWall();
+	brd.DrawWall();
 	snek.Draw(brd);
 	goal.Draw(brd);
 	if (gameIsOver)
