@@ -87,7 +87,7 @@ void Game::ComposeFrame()
 		if (gameIsOver)
 		{
 		
-			SpriteCodex::DrawGameOver(400, 300, gfx);
+			SpriteCodex::DrawGameOver(350, 265, gfx);
 		}
 	}
 	else {
