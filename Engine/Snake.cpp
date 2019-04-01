@@ -1,5 +1,6 @@
 #include "Snake.h"
 #include <assert.h>
+#include <ctime>
 
 Snake::Snake(const Location& loc)
 {
@@ -47,11 +48,15 @@ void Snake::Segment::InitHead(const Location& in_loc)
 {
 	loc = in_loc;
 	c = Snake::headColor;
+	
+	
 }
 
 void Snake::Segment::InitBody()
 {
 	c = Snake::bodyColor;
+	
+	
 }
 
 void Snake::Segment::Follow(const Segment& next)

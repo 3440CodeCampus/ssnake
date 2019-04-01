@@ -25,6 +25,7 @@ public:
 	void Grow();
 	void Draw(Board& brd)const;
 	bool IsInTile(const Location& target)const;
+	
 
 private:
 	static constexpr Color headColor = Colors::Yellow;
@@ -32,4 +33,6 @@ private:
 	static constexpr int nSegmentsMax = 100;
 	Segment segments[nSegmentsMax];
 	int nSegments = 1;
+	
+
 };
